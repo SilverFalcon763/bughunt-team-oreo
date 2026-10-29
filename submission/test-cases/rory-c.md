@@ -16,7 +16,7 @@ HOW TO USE THIS FILE
 
 **Test ID:** TC-01
 **Written by:** Rory C
-**Title:** Vote Count
+**Title:** Vote Count Decrement
 **Traces to:** REQ-9: Each user may cast at most 3 votes in total.
 **Test type:** Boundary Value
 **Test data:** Logged in as rory (password admin)
@@ -34,11 +34,32 @@ HOW TO USE THIS FILE
 
 ---
 
+**Test ID:** TC-02
+**Written by:** Rory C
+**Title:** Password Length
+**Traces to:** REQ-01	A user can register with a unique username and a password of at least 8 characters.
+**Test type:** Acceptance
+**Preconditions:** None
+**Test data:** Created account with username "rory" and password "admin"
+
+**Steps:**
+1. Go to Login/Register tab
+2. Enter any username
+3. Enter a password less than 8 character
+
+**Expected result:** Password is rejected for being less than 8 characters
+**Actual result:** Account is created without issue
+**Status:** Fail
+**Severity:** Major
+**V or V:** Verification
+
+---
+
 **Test ID:**
 **Written by:**
 **Title:**
 **Traces to:**
-**Test type:**
+**Test type:** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
 **Preconditions:**
 **Test data:**
 
@@ -49,8 +70,8 @@ HOW TO USE THIS FILE
 
 **Expected result:**
 **Actual result:**
-**Status:**
-**Severity:**
-**V or V:**
+**Status:** (Pass / Fail)
+**Severity:** (Critical / Major / Minor, Fail only)
+**V or V:** (Verification / Validation, Fail only)
 
 ---
