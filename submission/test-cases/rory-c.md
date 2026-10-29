@@ -55,23 +55,21 @@ HOW TO USE THIS FILE
 
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
-**Preconditions:**
-**Test data:**
+**Test ID:** TC-03
+**Written by:** Rory C
+**Title:** Can only add costumes with account
+**Traces to:** REQ-02	A user can log in with their username and password. Only logged-in users can submit costumes or vote.
+**Test type:** System
+**Preconditions:** Create account
+**Test data:** Username "rory" and password admin
 
 **Steps:**
-1.
-2.
-3.
+1. Create account with username and password
+2. Go to submit costume tab and fill out fields
+3. Click submit costume
 
-**Expected result:**
-**Actual result:**
-**Status:** (Pass / Fail)
-**Severity:** (Critical / Major / Minor, Fail only)
-**V or V:** (Verification / Validation, Fail only)
+**Expected result:** Users must be logged in to add a costume and are unable to if not
+**Actual result:** User is prompted to login before submitting a costume
+**Status:** Pass
 
 ---
