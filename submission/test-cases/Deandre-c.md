@@ -14,44 +14,53 @@ HOW TO USE THIS FILE
 
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
-**Preconditions:**
-**Test data:**
+**Test ID:** DC-01
+**Written by:** Deandre Chandler
+**Title:** Creative Not in Vote page
+**Traces to:** REQ-07 (Every submitted costume appears in the Gallery and is eligible for voting)
+**Test type:** Integration
+**Preconditions:** none
+**Test data:** N/A
 
 **Steps:**
-1.
-2.
-3.
+1. Confirm the creative costume in the gallery
+2. Check the vote page to see if eligible to vote
 
-**Expected result:**
-**Actual result:**
-**Status:** (Pass / Fail)
-**Severity:** (Critical / Major / Minor, Fail only)
-**V or V:** (Verification / Validation, Fail only)
+**Expected result:** Creative costume in vote page
+**Actual result:** Not existant
+**Status:** Fail
+**Severity:** Critical
+**V or V:** Validation
 
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:**
-**Preconditions:**
-**Test data:**
+**Test ID:** DC-02
+**Written by:** Deandre Chandler
+**Title:** User cna submit multiple costumes
+**Traces to:** REQ-03 (Each user may submit at most one costume.)
+**Test type:** Negative
+**Preconditions:** Logged in as g (password gggg). On the Submit Costume Page
+**Test data:** 
+
+Name: gg
+Description: gg
+Category: Spooky
+
+Name: gg
+Description: gg
+Category: Spooky
 
 **Steps:**
-1.
-2.
-3.
+1. Type the test data name into the Costume name field
+2. Type the test data description into the Description field
+3. Select Spooky from the Category dropdown
+4. Click Submit Costume
+5. Repeat steps 1-4 
 
-**Expected result:**
-**Actual result:**
-**Status:**
-**Severity:**
-**V or V:**
+**Expected result:** Reject more than 1 costume entry
+**Actual result:** Accepts more than 1 costume entry
+**Status:** FAIL
+**Severity:** Critcal
+**V or V:** Validation
 
 ---
