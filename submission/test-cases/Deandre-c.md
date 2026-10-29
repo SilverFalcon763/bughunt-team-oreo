@@ -76,7 +76,6 @@ Category: Spooky
 **Steps:**
 1. Open Gallary page
 2. Delete costume
-3.
 
 **Expected result:** Reject delete
 **Actual result:** Costume deleted
