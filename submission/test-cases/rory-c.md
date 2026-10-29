@@ -1,6 +1,6 @@
-# Test Cases: [Your First Name Last Initial]
+# Test Cases: Rory C
 
-**Team number:** [XX]
+**Team number:** Oreo
 
 <!--
 HOW TO USE THIS FILE
@@ -14,24 +14,23 @@ HOW TO USE THIS FILE
 
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
-**Preconditions:**
-**Test data:**
+**Test ID:** TC-01
+**Written by:** Rory C
+**Title:** Vote Count
+**Traces to:** REQ-9: Each user may cast at most 3 votes in total.
+**Test type:** Boundary Value
+**Test data:** Logged in as rory (password admin)
 
 **Steps:**
-1.
-2.
-3.
+1. Log in to account
+2. Go to vote page
+3. Click vote button 4 times
 
-**Expected result:**
-**Actual result:**
-**Status:** (Pass / Fail)
-**Severity:** (Critical / Major / Minor, Fail only)
-**V or V:** (Verification / Validation, Fail only)
+**Expected result:** User is unable to vote after submitting 3 votes and vote count is 0
+**Actual result:** User can submit 4 votes or until vote count hits -1
+**Status:** Fail
+**Severity:** Minor
+**V or V:** Verification
 
 ---
 
