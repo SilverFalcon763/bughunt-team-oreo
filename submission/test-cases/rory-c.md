@@ -61,7 +61,7 @@ HOW TO USE THIS FILE
 **Traces to:** REQ-02	A user can log in with their username and password. Only logged-in users can submit costumes or vote.
 **Test type:** System
 **Preconditions:** Create account
-**Test data:** Username "rory" and password admin
+**Test data:** Username "rory" and password "admin"
 
 **Steps:**
 1. Create account with username and password
@@ -71,5 +71,25 @@ HOW TO USE THIS FILE
 **Expected result:** Users must be logged in to add a costume and are unable to if not
 **Actual result:** User is prompted to login before submitting a costume
 **Status:** Pass
+
+---
+
+**Test ID:** TC-04
+**Written by:** Rory C
+**Title:** Category
+**Traces to:** REQ-06	Each costume belongs to exactly one category: Spooky, Funny, or Creative.
+**Test type:** Acceptance
+**Preconditions:** User is logged in to account
+**Test data:** Username "rory" and password "admin"
+
+**Steps:**
+1. Log in or create account
+2. Go to costume account 
+3. Fill out fields and click Submit Costume
+
+**Expected result:** Only one category can be selected for costumes
+**Actual result:** Only one category can be selected for costumes
+**Status:** Pass
+
 
 ---
