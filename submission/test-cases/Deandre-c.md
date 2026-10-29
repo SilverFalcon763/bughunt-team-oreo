@@ -64,3 +64,24 @@ Category: Spooky
 **V or V:** Validation
 
 ---
+
+**Test ID:** DC-03
+**Written by:** Deandre Chandler
+**Title:** can delete costume without being logged in
+**Traces to:** REQ-08 (Only the owner of a costume can delete it.)
+**Test type:** Security
+**Preconditions:** N/A
+**Test data:** 
+
+**Steps:**
+1. Open Gallary page
+2. Delete costume
+3.
+
+**Expected result:** Reject delete
+**Actual result:** Costume deleted
+**Status:** FAIL
+**Severity:** Critical
+**V or V:** Validation
+
+---
